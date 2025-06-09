@@ -54,3 +54,5 @@ dkms.conf
 # CMake and project related
 bin/*
 build/
+.vscode/
+.DS_Store
