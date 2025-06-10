@@ -1,8 +1,8 @@
 #ifndef UTILS_h
 #define UTILS_h
 
-#include "types.h"
-#include "maths.h"
+#include "utils/types.h"
+#include "utils/maths.h"
 
 // color parsing
 #define U_CLR_R(clr_rgba) (u8)((clr_rgba & 0xff000000) >> 8 * 3)

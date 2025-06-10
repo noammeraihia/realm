@@ -1,4 +1,4 @@
-#include "app_context.h"
+#include "core/app_context.h"
 
 i8 A_init_ctx(app_ctx* ctx, u16 wwidth, u16 wheight)
 {
@@ -41,19 +41,6 @@ void A_begin_update_ctx(app_ctx* ctx, u32 clr_rgba)
                         break;
                 }
         }
-}
-
-void A_render_rect(app_ctx* ctx, v2f pos, v2f dim, u32 clr_rgba)
-{
-        SDL_FRect rect = {
-                .x = pos.x,
-                .y = pos.y,
-                .w = dim.x,
-                .h = dim.y
-        };
-
-        SDL_SetRenderDrawColor(ctx->renderer, U_CLR_DEV(clr_rgba));
-        SDL_RenderRect(ctx->renderer, &rect);
 }
 
 void A_end_update_ctx(app_ctx* ctx)

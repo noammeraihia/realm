@@ -7,4 +7,5 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
 add_subdirectory(${CMAKE_SOURCE_DIR}/vendor/SDL)
 add_subdirectory(${CMAKE_SOURCE_DIR}/vendor/my-dear-logger)
+add_subdirectory(${CMAKE_SOURCE_DIR}/engine)
 add_subdirectory(${CMAKE_SOURCE_DIR}/src)
